@@ -10,10 +10,20 @@ const server = http.createServer((req, resp)=>{
 
 server.listen(4100);
 ```
+> Open Terminal and type following command to sart server
+```
+node http
+```
 > Go to browser and type in address bar
 ```
 localhost:4100
 ```
 >and press enter
 
+**2. When we have applied changes in server file**
+> After made changes we have to close server by press Ctrl+C
+> And then strat server by following command
+```
+node http
+```
 
