@@ -7,7 +7,34 @@ Three things to Understand
 4. Navbar.js : Make links in a component file or in view page component
 
 Step By Step
-1. Make component in components folder
+1. Wrap up the <App/> tag with <BrowserRouter>
+```
+<BrowserRouter>
+   <App />
+</BrowserRouter>
+```
+2. Make Routes in App.js file
+```
+import logo from './logo.svg';
+import './App.css';
+import Home from './Home';
+import About from './About';
+import { Route, Routes } from 'react-router-dom';
+
+function App() {
+  return (
+    <>
+      <Routes>
+        <Route path="/Home" element={<Home />} />
+        <Route path="/About" element={<About />} />
+      </Routes>
+    </>
+  );
+}
+
+export default App;
+```
+3. Make component in components folder
 ```
 import React from 'react';
 import { Link } from 'react-router-dom';
